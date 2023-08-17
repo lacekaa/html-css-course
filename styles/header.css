@@ -7,7 +7,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(230, 230, 230);
 }
 
 .left-section {
@@ -82,18 +89,19 @@
     flex-shrink: 0;
 }
 
-.upload-icon{
-    height: 24px;
-}
-.youtube-apps-icon{
+.upload-icon {
     height: 24px;
 }
 
-.notifications-icon{
+.youtube-apps-icon {
     height: 24px;
 }
 
-.current-user-picture{
+.notifications-icon {
+    height: 24px;
+}
+
+.current-user-picture {
     height: 32px;
     /*making it round use half the size of height*/
     border-radius: 16px;
