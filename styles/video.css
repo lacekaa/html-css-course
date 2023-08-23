@@ -16,7 +16,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 
@@ -45,12 +45,12 @@
 
 .profile-picture {
     width: 100%;
-    border-radius: 40px;
+    border-radius: 36px;
 }
 
 .thumbnail-row {
+    margin-bottom: 8px;
     position: relative;
-    margin-bottom: 12px;
 }
 
 .video-author,
@@ -70,17 +70,36 @@
     row-gap: 40px;
 }
 
+/*from 0 to 600 in screensize do following*/
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .video-time {
     background-color: black;
     color: white;
     position: absolute;
     bottom: 8px;
     right: 5px;
-    font-family: Roboto,Arial;
+    font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
     padding-left: 4px;
-    padding-right:4px;
+    padding-right: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 2px;
