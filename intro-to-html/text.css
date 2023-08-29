@@ -2,7 +2,6 @@
     /*targeting all paragraphs*/
     /*whatever is more concrete (here class name) is more specific and has higher priority*/
 p {
-    font-family: Roboto;
     margin-top: 0;
     margin-bottom: 0;
 }
